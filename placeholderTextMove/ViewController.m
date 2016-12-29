@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
-
+#import "RPFloatingPlaceholderTextField.h"
+#import "RPFloatingPlaceholderTextView.h"
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet RPFloatingPlaceholderTextView *tv;
 
 @end
 
@@ -16,11 +18,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [_tv setPlaceholder:@"this is multiline textview"];
 }
 
 
-- (void)didReceiveMemoryWarning {
+
+
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

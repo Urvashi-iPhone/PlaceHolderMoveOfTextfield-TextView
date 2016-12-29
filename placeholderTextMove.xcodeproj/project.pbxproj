@@ -15,6 +15,8 @@
 		AD0E3BAC1E14D7AB000C4C86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD0E3BAA1E14D7AB000C4C86 /* LaunchScreen.storyboard */; };
 		AD0E3BB71E14D7AB000C4C86 /* placeholderTextMoveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0E3BB61E14D7AB000C4C86 /* placeholderTextMoveTests.m */; };
 		AD0E3BC21E14D7AB000C4C86 /* placeholderTextMoveUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0E3BC11E14D7AB000C4C86 /* placeholderTextMoveUITests.m */; };
+		AD0E3BD51E14D7DC000C4C86 /* RPFloatingPlaceholderTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0E3BD11E14D7DC000C4C86 /* RPFloatingPlaceholderTextField.m */; };
+		AD0E3BD61E14D7DC000C4C86 /* RPFloatingPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0E3BD31E14D7DC000C4C86 /* RPFloatingPlaceholderTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,11 @@
 		AD0E3BBD1E14D7AB000C4C86 /* placeholderTextMoveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = placeholderTextMoveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD0E3BC11E14D7AB000C4C86 /* placeholderTextMoveUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = placeholderTextMoveUITests.m; sourceTree = "<group>"; };
 		AD0E3BC31E14D7AB000C4C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD0E3BCF1E14D7DC000C4C86 /* RPFloatingPlaceholderConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderConstants.h; sourceTree = "<group>"; };
+		AD0E3BD01E14D7DC000C4C86 /* RPFloatingPlaceholderTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderTextField.h; sourceTree = "<group>"; };
+		AD0E3BD11E14D7DC000C4C86 /* RPFloatingPlaceholderTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPFloatingPlaceholderTextField.m; sourceTree = "<group>"; };
+		AD0E3BD21E14D7DC000C4C86 /* RPFloatingPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderTextView.h; sourceTree = "<group>"; };
+		AD0E3BD31E14D7DC000C4C86 /* RPFloatingPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPFloatingPlaceholderTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +108,7 @@
 		AD0E3B9B1E14D7AB000C4C86 /* placeholderTextMove */ = {
 			isa = PBXGroup;
 			children = (
+				AD0E3BD41E14D7DC000C4C86 /* RPFloatingPlaceholders */,
 				AD0E3B9F1E14D7AB000C4C86 /* AppDelegate.h */,
 				AD0E3BA01E14D7AB000C4C86 /* AppDelegate.m */,
 				AD0E3BA21E14D7AB000C4C86 /* ViewController.h */,
@@ -139,6 +147,19 @@
 			);
 			path = placeholderTextMoveUITests;
 			sourceTree = "<group>";
+		};
+		AD0E3BD41E14D7DC000C4C86 /* RPFloatingPlaceholders */ = {
+			isa = PBXGroup;
+			children = (
+				AD0E3BCF1E14D7DC000C4C86 /* RPFloatingPlaceholderConstants.h */,
+				AD0E3BD01E14D7DC000C4C86 /* RPFloatingPlaceholderTextField.h */,
+				AD0E3BD11E14D7DC000C4C86 /* RPFloatingPlaceholderTextField.m */,
+				AD0E3BD21E14D7DC000C4C86 /* RPFloatingPlaceholderTextView.h */,
+				AD0E3BD31E14D7DC000C4C86 /* RPFloatingPlaceholderTextView.m */,
+			);
+			name = RPFloatingPlaceholders;
+			path = "/Users/tecksky/Downloads/RPFloatingPlaceholders-master/Example/FloatLabeledTextViewExample/../../RPFloatingPlaceholders";
+			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
@@ -273,8 +294,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD0E3BD61E14D7DC000C4C86 /* RPFloatingPlaceholderTextView.m in Sources */,
 				AD0E3BA41E14D7AB000C4C86 /* ViewController.m in Sources */,
 				AD0E3BA11E14D7AB000C4C86 /* AppDelegate.m in Sources */,
+				AD0E3BD51E14D7DC000C4C86 /* RPFloatingPlaceholderTextField.m in Sources */,
 				AD0E3B9E1E14D7AB000C4C86 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
